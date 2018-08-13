@@ -1,0 +1,15 @@
+  {
+    "name": "FunSilencer",
+    "version": "1.0",
+    "description": "For when there's too much fun",
+    "manifest_version": 2,
+	"background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+	"content_scripts": [{
+		"js": ["content.js"],
+		"matches": ["https://funtechacademies.co.uk/Academies/*/*/*/story.html"]
+	}]
+  }
+  
